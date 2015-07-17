@@ -1,0 +1,15 @@
+<div class="todo">
+  <div class="panel panel-default">
+    <div class="container">
+      <div class="panel-body">
+        <h1>Edit</h1>
+        <form action="/todo/<%= @todo.id %>" method="post" accept-charset="utf-8">
+	        <input name="_method" type="hidden" value="put" />
+ 	        <p>Title: <input type="text" name="todo[title]" value="<%= @todo.title %>" id="todo[title]" /></p>
+	        <p>Description: <br><textarea name="todo[description]" rows="3" cols="40"><%= @todo.description %></textarea></p>
+	        <p><input type="submit" value="Update To-do" class="btn btn-success"/></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

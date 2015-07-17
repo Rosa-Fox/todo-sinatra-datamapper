@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>To Do!</h1>
+    <p>Be more productive with this amazing To-do app!</p>
+    </div>
+  </div>
+  <div class="todo">
+    <div class="panel panel-default">
+      <div class="container">
+        <div class="panel-body">
+          <h2>To Do!</h2>
+          <a href="/todo/new" class="btn btn-success">Add a new To-Do!</a>
+	  <% @todos.each do |todo| %>
+	    <% if !todo.complete? %>
+	     <h3><a href="/todo/<%= todo.id %>">- <%= todo.title %></a></h3>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="todo">
+    <div class="panel panel-default">
+      <div class="container">
+        <div class="panel-body">
+          <h2>Completed!</h2>
+          <% @todos.each do |todo| %>
+            <% if todo.complete? %>
+              <h3><a href="/todo/<%= todo.id %>">- <%= todo.title %></a></h3>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

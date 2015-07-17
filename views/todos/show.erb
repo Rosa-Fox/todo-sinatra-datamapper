@@ -1,0 +1,26 @@
+<div class="todo">
+  <div class="panel panel-default">
+    <div class="container">
+      <div class="panel-body">
+        <h2><%= @todo.title %></h2>
+        <h4>More Info: <%= @todo.description %></h4>
+        <div class="row">
+          <div class ="col-md-1">
+            <a href="/todo" class="btn btn-default">Back</a>
+            <a href="/todo/<%= @todo.id %>/edit" class="btn btn-info">Edit</a>
+
+            <form action="/todo/<%= @todo.id %>/complete" method="post">
+              <input type="hidden" name="_method" value="put" />
+              <input type="submit" value="Complete" class="btn btn-success">
+            </form>
+
+            <form action="/todo/<%= @todo.id %>" method="post">
+              <input type="hidden" name="_method" value="delete" />
+              <input type="submit" value="Delete" class="btn btn-danger">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
