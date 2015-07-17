@@ -1,9 +1,6 @@
 # todo-sinatra-datamapper
 To-Do List App put together as a beginner Sinatra with Data Mapper example before mentoring at Codebar - Mind the Code
 
-# yoga-pose-generator
-Yoga Pose Generator put together put together as an example before mentoring at Codebar - Mind the Code
-
 clone the repo and `cd` into it
 
 Make sure you have Ruby installed https://www.ruby-lang.org/en/downloads/
