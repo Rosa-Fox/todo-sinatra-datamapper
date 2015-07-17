@@ -24,7 +24,7 @@ Start the local server
 rackup
 ```
 
-Navigate to http://localhost:9292
+Navigate to http://localhost:9292/todo
 
 
 To query/add stuff to the db using the command line (make sure you `cd` into the root directory:
